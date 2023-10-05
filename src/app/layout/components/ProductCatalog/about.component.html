@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="sidebar">
+    <h3>Filter</h3>
+  </div>
+  <div class="product-grid">
+    <h1 class="grid-title">Clothes</h1>
+    <div class="grid-header"></div>
+    <mat-grid-list cols="4" rowHeight="380px" class="grid-list">
+      <mat-grid-tile *ngFor="let item of dataSource" class="product-tile">
+        <mat-card class="product-card">
+          <img
+            mat-card-image
+            src="assets/images/product.jpg"
+            class="product-image"
+          />
+          <mat-card-content class="product-content">
+            <h3>{{ item["name"] }}</h3>
+            <h3>{{ item["price"] }}</h3>
+          </mat-card-content>
+          <mat-card-footer class="product-footer">
+            <button class="button-cart">Add to cart</button>
+          </mat-card-footer>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <mat-paginator
+      [length]="totalElements"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+      aria-label="Select page of products"
+      (page)="paginate($event)"
+      class="paginator"
+    >
+    </mat-paginator>
+  </div>
+</div>

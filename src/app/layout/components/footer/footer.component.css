@@ -1,0 +1,14 @@
+.footer {
+    background-color: rgb(33, 110, 197);
+    color: white;
+    position: realtive;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 12px; /* Adjust the font size as desired */
+  }
+  

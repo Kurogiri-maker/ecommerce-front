@@ -1,0 +1,247 @@
+<mat-toolbar class="custom-toolbar">
+  <!-- First div-->
+  <div class="header-top">
+    <span class="toolbar-title" (click)="GoToHomePage()">Clothes Store</span>
+    <div class="search-container">
+      <input
+        class="search-bar"
+        type="text"
+        placeholder="What are you searching for? "
+      />
+      <button class="search-button">
+        <span> Search </span>
+      </button>
+    </div>
+    <div class="user-container">
+      <img
+        class="user-toggler"
+        src="assets/images/user.png"
+        (click)="toggleDropdown()"
+      />
+      <div class="user-menu">
+        <!-- <div class="user-menu-item">Mon Compte</div> -->
+        <div class="user-menu-item">Se connecter</div>
+      </div>
+    </div>
+
+    <div class="cart-block">
+      <img class="cart-icon-img" src="assets/images/shopping-cart.png" />
+    </div>
+  </div>
+
+  <!-- Second div-->
+  <div class="header-bottom">
+    <div class="megamenu">
+      <ul class="menu-content">
+        <li class="menu-item">
+          <a routerLink="/men">
+            <span>Men <i class="fa fa-caret-down"></i> </span>
+          </a>
+          <div class="subnav">
+            <div class="subnav-content">
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/men/shoes">Shoes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/shoes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/shoes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/shoes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/shoes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/men/clothes">Clothes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/clothes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/clothes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/clothes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/clothes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/men/accessories">Accessories</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/accessories/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/accessories/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/accessories/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/men/accessories/4">3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a routerLink="/women">
+            <span> Women <i class="fa fa-caret-down"></i></span>
+          </a>
+          <div class="subnav">
+            <div class="subnav-content">
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/women/shoes">Shoes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/shoes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/shoes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/shoes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/shoes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/women/clothes">Clothes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/clothes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/clothes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/clothes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/clothes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/women/accessories">Accessories</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/accessories/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/accessories/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/accessories/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/women/accessories/4">3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a routerLink="/children">
+            <span> Children <i class="fa fa-caret-down"></i></span>
+          </a>
+          <div class="subnav">
+            <div class="subnav-content">
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/children/shoes">Shoes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/shoes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/shoes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/shoes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/shoes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/children/clothes">Clothes</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/clothes/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/clothes/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/clothes/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/clothes/4">3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="subnav-column">
+                <h2 class="subnav-column-h2">
+                  <a routerLink="/children/accessories">Accesories</a>
+                </h2>
+                <ul class="subnav-column-list">
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/accesories/1">1</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/accessories/2">2</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/accessories/3">3</a>
+                  </li>
+                  <li class="subnav-column-list-item">
+                    <a routerLink="/children/accessories/4">3</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a>
+            <span> News </span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a>
+            <span> Stores </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</mat-toolbar>

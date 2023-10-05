@@ -1,0 +1,15 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set the container to full viewport height */
+    overflow-y: auto;
+  }
+  
+  .content-container {
+    flex: 1; /* Take up all available vertical space */
+    margin: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  

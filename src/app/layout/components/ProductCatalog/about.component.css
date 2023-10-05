@@ -1,0 +1,155 @@
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .circular-button {
+    /* Set the size to create a circular shape (width and height are the same) */
+    width: 50px;
+    height: 50px;
+  
+    /* Make the button circular by setting a large border-radius */
+    border-radius: 50%;
+  
+    /* Apply a green background color */
+    background-color: green;
+  
+    /* Add some additional styles for better visibility */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Show the pointer cursor on hover */
+  }
+
+  .product-card{
+    margin: 0;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+  }
+
+  .product-tile:hover {
+    border:1px solid #ccc ;
+    border-radius: 5px;
+  }
+
+  .product-tile:hover .product-footer{
+    opacity: 1;
+    visibility: visible;
+    top: 95%;
+  }
+
+  .product-tile{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border: none;
+  }
+
+  .product-image{
+    height: 250px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .product-content{
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+
+  .product-content h3 {
+    margin: 1px;
+  }
+
+  .product-footer{
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    top: 80%;
+    width: 180px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .button-cart{
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px; 
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+
+  .button-cart:hover {
+    background-color: black;
+  }
+
+  .sidebar {
+    width: 300px;
+    height: 500px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+
+  }
+
+  .product-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-header{
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .grid-list{
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .paginator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+    
+  }
+
+  

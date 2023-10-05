@@ -1,0 +1,278 @@
+.custom-toolbar {
+    /*background-color: rgb(33, 110, 197);*/
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.toolbar-title {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    margin-right: 200px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.toolbar-link {
+    background-color: black;
+    color: black;
+    margin-left: 16px;
+}
+
+
+
+/* Container */
+.search-container {
+    display: flex; /* Display items side by side */
+    align-items: center; /* Center items vertically */
+    position: relative;
+    margin-right: 150px;
+    padding: 5px;
+
+}
+
+/* Search bar */
+.search-bar {
+    width: 500px;
+    height: 25px;
+    font-size: 12px;
+    padding: 10px;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    border-left: 2px solid #ebebeb;
+    border-right: none;
+    border-radius: 20px 0 0 20px; /* Rounded at the left */
+    outline: none;
+}
+
+/* Placeholder text color */
+.search-bar:hover {
+    color: black;
+}
+
+/* Search button */
+.search-button {
+    width: 150px;
+    height: 49px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 0 20px 20px 0; /* Rounded at the right */
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+/* Search button hover state */
+.search-button:hover {
+    background-color: black;
+}
+
+
+
+
+.cart-block{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+
+.cart-icon{
+    color: black;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart-icon-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    padding: 10px;
+
+}
+
+
+
+.user-menu{
+    color: black;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.user-toggler{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.user-menu-item {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.user-menu-item:hover {
+    text-decoration: underline;
+}
+
+
+.header-bottom{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 90px;
+}
+
+.megamenu{
+    
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-item{
+    margin-right: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.menu-item a{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    margin-top: 50px;
+    min-width:1000px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+    border-bottom: 1px solid  red;
+    border-radius: 5px;
+}
+
+.submenu-list{
+    list-style-type: none;
+}
+
+
+
+.menu-item:hover .subnav{
+   opacity: 1;
+   visibility: visible;
+   top: 200px;
+    
+}
+
+.subnav{
+    display: flex;
+    position: absolute;
+    left: 145px;
+    background-color: white;
+    margin-top: 10px;
+    top: 180px;
+    padding: 10px;
+    border-top: 1px solid #afadad;
+    border-left: 1px solid #afadad;
+    border-right: 1px solid #afadad; 
+    border-bottom: 3px solid  red;
+    width: 80%;
+    min-height: 200px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+}
+.subnav-content{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.subnav-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+
+}
+
+.subnav-column-h2 {
+    font: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 250px;
+    border-bottom: 1px solid red;
+}
+
+.subnav-column-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.subnav-column-list-item{
+    color: rgb(53, 50, 50);
+}
+
+.subnav-column-list-item:hover{
+    color: red;
+}
+
+.subnav-content a {
+    float: left;
+    color: black;
+    text-decoration: none;
+  }
+
+  .menu-item a:hover {
+    color: red;
+  }
+
+
+
+
+
+
